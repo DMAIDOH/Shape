@@ -15,7 +15,8 @@ Shape::Shape(string shapeName) : name{shapeName} {
 Shape::~Shape() {}
 
 double Shape::getArea(){
-	return name.getArea();
+	cout << "Shape has no specified area" << endl;
+	return 0;
 }
 
 void Shape::print(){
@@ -30,3 +31,5 @@ void Shape::print(){
 virtual void print() = 0{
 	
 }*/
+
+#endif
