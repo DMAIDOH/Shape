@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 
-	Shape s = Shape(string shape);
+	Shape anyShape = Shape(string aShape);
 	
 	//--------------------------------------------------------------------
 	
@@ -16,10 +16,10 @@ int main() {
 	cout << "------" << endl;
 
 	// test Shape getArea()
-	cout << "Shape area: " << s.getArea() << endl;
+	cout << "Shape area: " << anyShape.getArea() << endl;
 
 	// test Shape print()
-	cout << "Print shape: " << s.print() << endl;
+	cout << "Print Shape: " << anyShape.print() << endl;
 
 	//--------------------------------------------------------------------
 	
