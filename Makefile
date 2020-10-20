@@ -1,5 +1,5 @@
 EXECS = tester
-OBJS = tester.o Shape.o
+OBJS = tester.o Shape.o Rectangle.o
 
 CC = g++
 CCFLAGS = -std=c++17 -Wall -Wno-deprecated -Werror=return-type -g
