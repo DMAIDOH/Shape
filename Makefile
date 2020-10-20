@@ -1,5 +1,5 @@
 EXECS = tester
-OBJS = tester.o
+OBJS = tester.o Shape.o
 
 CC = g++
 CCFLAGS = -std=c++17 -Wall -Wno-deprecated -Werror=return-type -g
@@ -7,7 +7,7 @@ CCFLAGS = -std=c++17 -Wall -Wno-deprecated -Werror=return-type -g
 all: $(EXECS)
 
 tester: $(OBJS)
-	S(CC) $(CCFLAGS) $^ -o $@
+	$(CC) $(CCFLAGS) $^ -o $@
 
 %.o: %.cpp *.h
 	$(CC) $(CCFLAGS) -c $<
