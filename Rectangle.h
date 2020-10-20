@@ -13,6 +13,6 @@ class Rectangle : public Shape {
 	    ~Rectangle();
 	    double getArea();
 	    void print();
-}
+};
 
 #endif
