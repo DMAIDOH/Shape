@@ -50,6 +50,18 @@ int main() {
 	cout << "Rectangle:" << endl;
 	cout << "-------" << endl;
 
+	Rectangle* aRectangle = new Rectangle("aRectangle", 2.0, 3.0);
+	
+	// test getArea
+	cout << "Rectangle area: " << aRectangle->getArea() << " [6]" <<  endl;
+
+        // test print()
+        cout << "Print Rectangle: " << endl;
+        aRectangle->print();
+	cout << "[Name: aRectangle]" << endl;
+	cout << "[Width: 2]" << endl;
+	cout << "[Height: 3]" << endl;	
+
 	//--------------------------------------------------------------------
 	
 	return 0;
