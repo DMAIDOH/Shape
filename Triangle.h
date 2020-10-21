@@ -15,4 +15,5 @@ class Triangle : public Shape{
 		double getArea();
 		void print();
 };
+
 #endif

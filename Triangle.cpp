@@ -8,29 +8,26 @@
 using namespace std;
 
 //constructor
-Triangle::Triangle(string name, double base, double height):Shape(shapeName){
+Triangle::Triangle(string name, double base, double height) : Shape{name}, triBase{base}, triHeight{height}{
 		cout << "In Triangle typical-use constructor" << endl;
-		//triBase{base}; or this->triBase = base;
-		//triHeight{height};or this->triHeight = height;
 	}
 
 	//deconstructor
 	Triangle::~Triangle() {}
-
+	
+	//calculating area
 	double Triangle::getArea(){
-		Shape::getArea();
 		return (0.5 * triBase * triHeight);
 	}
 
 	void Triangle::print(){
 		cout << "In Triangle's print statement" << endl;
-		cout << "Name: " << name << endl;
-		Shape::print();
+		this->Shape::print();
 		cout << "Base: " << triBase << endl;
 		cout << "Height: " << triHeight << endl;
 	}
 
 
-
+#endif
 
 

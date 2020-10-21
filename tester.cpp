@@ -2,6 +2,8 @@
 #include "Shape.h"
 #include "Rectangle.h"
 #include "Circle.h"
+#include "Triangle.h"
+
 using namespace std;
 
 int main() {
@@ -56,6 +58,23 @@ int main() {
 	cout << "---------" << endl;
 	cout << "Triangle:" << endl;
 	cout << "---------" << endl;
+
+	Triangle* aTriangle = new Triangle("aTriangle", 4.0, 6.0);
+	cout << endl;
+
+	//test getArea()
+	cout << "Expected Trangle area: [12]" << endl;
+	cout << "Triangle Area: " << aTriangle->getArea() << endl;
+	cout << endl;
+
+	//test print()
+	cout << "Print Triangle: " << endl;
+	aTriangle->print();
+	cout << "[name = aTriangle]" << endl;
+	cout << "[Base: 4]" << endl;
+	cout << "[Height: 6]" << endl;
+	cout << endl;
+	
 
 	//--------------------------------------------------------------------
 	
