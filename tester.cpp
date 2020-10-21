@@ -34,7 +34,20 @@ int main() {
         cout << "-------" << endl;
         cout << "Circle:" << endl;
         cout << "-------" << endl;
+	
+	Circle* aCircle = new Circle("aCircle", 2.0);
+	
+	//test getArea()
+	cout << "Circle area: " << aCircle->getArea() << endl;
+	cout << "Expected area: [12.566371]" << endl;
 
+	//test print()
+	cout << "Print Circle: " << endl;
+	aCircle-> print();
+	cout << "Expected name: [aCircle]" << endl;
+	cout << "Expected radius: [2.0]" << endl; 
+
+	
 	//--------------------------------------------------------------------
 	
 	// test Triangle: getArea, print
