@@ -24,4 +24,13 @@ void Shape::print(){
 	cout << "name = " << this->name << endl;
 }
 
+/*virtual void print(){
+
+}
+
+virtual void print() = 0{
+	
+}*/
+
+
 #endif
