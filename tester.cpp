@@ -4,7 +4,8 @@ using namespace std;
 
 int main() {
 
-	Shape s = Shape(string shape);
+	Shape* anyShape = new Shape("aShape");
+	// &anyShape = new Shape("aShape");
 	
 	//--------------------------------------------------------------------
 	
@@ -16,10 +17,11 @@ int main() {
 	cout << "------" << endl;
 
 	// test Shape getArea()
-	cout << "Shape area: " << s.getArea() << endl;
+	cout << "Shape area: " << anyShape->getArea() << endl;
 
 	// test Shape print()
-	cout << "Print shape: " << s.print() << endl;
+	cout << "Print Shape: " << endl;
+	anyShape->print(); 
 
 	//--------------------------------------------------------------------
 	
@@ -60,6 +62,18 @@ int main() {
 	cout << "-------" << endl;
 	cout << "Rectangle:" << endl;
 	cout << "-------" << endl;
+
+	Rectangle* aRectangle = new Rectangle("aRectangle", 2.0, 3.0);
+	
+	// test getArea
+	cout << "Rectangle area: " << aRectangle->getArea() << " [6]" <<  endl;
+
+        // test print()
+        cout << "Print Rectangle: " << endl;
+        aRectangle->print();
+	cout << "[Name: aRectangle]" << endl;
+	cout << "[Width: 2]" << endl;
+	cout << "[Height: 3]" << endl;	
 
 	//--------------------------------------------------------------------
 	

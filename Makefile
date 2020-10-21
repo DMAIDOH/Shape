@@ -1,5 +1,9 @@
 EXECS = tester
+<<<<<<< HEAD
 OBJS = tester.o Shape.o Circle.o Rectangle.o Triangle.o
+=======
+OBJS = tester.o Shape.o
+>>>>>>> e2079d3256ab805ada607dec4d3b81dfbe63d9cf
 
 CC = g++
 CCFLAGS = -std=c++17 -Wall -Wno-deprecated -Werror=return-type -g
@@ -7,7 +11,7 @@ CCFLAGS = -std=c++17 -Wall -Wno-deprecated -Werror=return-type -g
 all: $(EXECS)
 
 tester: $(OBJS)
-	S(CC) $(CCFLAGS) $^ -o $@
+	$(CC) $(CCFLAGS) $^ -o $@
 
 %.o: %.cpp *.h
 	$(CC) $(CCFLAGS) -c $<
