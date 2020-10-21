@@ -2,6 +2,7 @@
 #define __RECTANGLE_CPP__
 
 #include <iostream>
+#include "Shape.h"
 #include "Rectangle.h"
 
 using namespace std;
@@ -17,11 +18,12 @@ Rectangle::~Rectangle() {}
 // calculate the area of this Rectangle
 double Rectangle::getArea() {
 	return widthValue*heightValue;
+}
 
 // print out name, widthValue, and heightValue of this Rectangle
 void Rectangle::print() {
 	cout << "In Rectangle's print statement" << endl;
-	cout << "Name: " << name << endl;
+	this->Shape::print();
 	cout << "Width: " << widthValue << endl;
 	cout << "Height: " << heightValue << endl;
 }

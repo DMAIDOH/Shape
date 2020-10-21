@@ -18,11 +18,13 @@ int main() {
 	cout << "------" << endl;
 
 	// test Shape getArea()
-	cout << "Shape area: " << anyShape->getArea() << endl;
+	cout << "Shape area: " << anyShape->getArea() << " [0]" << endl;
+	cout << endl;
 
 	// test Shape print()
 	cout << "Print Shape: " << endl;
 	anyShape->print(); 
+	cout << "[name = aShape]" << endl;
 
 	//--------------------------------------------------------------------
 	
@@ -52,16 +54,19 @@ int main() {
 	cout << "-------" << endl;
 
 	Rectangle* aRectangle = new Rectangle("aRectangle", 2.0, 3.0);
+	cout << endl;
 	
 	// test getArea
 	cout << "Rectangle area: " << aRectangle->getArea() << " [6]" <<  endl;
+	cout << endl;
 
         // test print()
         cout << "Print Rectangle: " << endl;
         aRectangle->print();
-	cout << "[Name: aRectangle]" << endl;
+	cout << "[name = aRectangle]" << endl;
 	cout << "[Width: 2]" << endl;
 	cout << "[Height: 3]" << endl;	
+	cout << endl;
 
 	//--------------------------------------------------------------------
 	

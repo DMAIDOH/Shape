@@ -9,6 +9,9 @@ all: $(EXECS)
 tester: $(OBJS)
 	$(CC) $(CCFLAGS) $^ -o $@
 
+Rectangle.o: Rectangle.cpp Rectangle.h Shape.cpp Shape.h
+	$(CC) $(CCFLAGS) -c $<
+
 %.o: %.cpp *.h
 	$(CC) $(CCFLAGS) -c $<
 
