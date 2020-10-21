@@ -23,7 +23,7 @@ double Circle::getArea(){
 //print out name and radiusValue of this Circle
 void Circle::print(){
 	cout << "In Circle's print statement: " << endl;
-	cout << "Name: " << this->Shape::print() << endl;
+	this->Shape::print();
 	cout << "Radius: " <<  radiusValue << endl;
 }
 

@@ -1,13 +1,13 @@
 #include <iostream>
 #include "Shape.h"
 #include "Rectangle.h"
+#include "Circle.h"
 using namespace std;
 
 int main() {
 
 	Shape* anyShape = new Shape("aShape");
-	// &anyShape = new Shape("aShape");
-	
+		
 	//--------------------------------------------------------------------
 	
 	// test Shape: getArea, print
